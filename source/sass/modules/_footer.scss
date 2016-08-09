@@ -1,0 +1,30 @@
+#footer {
+    border-top: $lightgray 2px solid;
+
+    .bottomLine {
+        padding: 2rem;
+
+        @include clearfix;
+
+        p {
+            font-size: 1rem;
+        }
+
+        img {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+
+        .copyright {
+            @include breakpoint($small) {
+                float: left;
+            }
+        }
+
+        .symu {
+            @include breakpoint($small) {
+                float: right;
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+#tourType-area {
+    @include backImage("../images/hero-2.png");
+
+    color: $white;
+    height: 160vh;
+    text-align: center;
+    
+
+    @include breakpoint($small) {
+        height: 90vh;
+    }
+
+
+    @include breakpoint($medium) {
+        height: 80vh;
+    }
+
+
+    .sectionHeader {
+       
+
+        h2 {
+            color: $black;
+        }
+    }
+
+    .sectionContent {
+        margin-bottom: 2rem;
+    }
+
+    .sectionBottom {
+        margin-top: 5rem;
+
+        .locations {
+            display: inline-block;
+            margin-right: 2rem;
+            position: relative;
+
+            img {
+                width: 15rem;
+                height: 15rem;
+                border: $white 0.2rem solid;
+
+                @include border-radius(50%);
+            }
+
+            h3 {
+                color: $white;
+                position: absolute;
+                margin-top: -90px;
+                margin-left: 20px;
+            }
+        }
+    }
+}

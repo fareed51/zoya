@@ -1,0 +1,54 @@
+html {
+    /*default font size is 16px for the browser means 1rem=16px but after making 62.5% it gonna be 1rem=10px*/
+    font-size: 62.5%;
+}
+
+body {
+    font: $bodyFont;
+    color: $black;
+}
+
+#{headings()} {
+    font: $bodyFontHead;
+}
+
+h2 {
+    padding: 3rem;
+    font-size: 2rem;
+    font-weight: $bold;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-weight: $bold;
+}
+
+h4 {
+    font-size: 1.5rem;
+}
+
+p {
+    font-weight: $light;
+    color: $black;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: $white;
+}
+
+// .sectionBottom {
+//     background-color: red;
+//     margin-bottom: 5rem;
+// }
+
+.container {
+    @include container(80%);
+}
+
+$susy: (columns: 12, container: 60em, gutters: 1 / 4, gutter-position: inside, debug: (image: hide, color: rgba(#66f, 0.25), output: background, toggle: top right));

@@ -1,0 +1,92 @@
+#navigation {
+    background-color: rgba($black, 0.8);
+    padding: 1.5rem 0;
+
+    @include clearfix;
+
+    figure {
+        float: left;
+    }
+
+    menu {
+        text-align: right;
+        cursor: pointer;
+
+        .fa-bars {
+            @include breakpoint($small) {
+                display: none;
+            }
+        }
+
+        ul {
+            float: right;
+            display: none;
+
+            @include breakpoint($small) {
+                display: block;
+            }
+
+
+            li {
+                display: inline-block;
+                padding-left: 2rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+}
+
+$pink: $black;
+$green: $black;
+
+#nav {
+    background-color: rgba($black, 0.8);
+    padding: 1.5rem 0;
+
+    @include clearfix;
+
+    .brand {
+        float: left;
+    }
+
+    menu {
+        text-align: right;
+        cursor: pointer;
+
+        .fa-bars {
+            font-size: 2.5rem;
+            display: none;
+            cursor: pointer;
+
+            @include breakpoint(0 $small) {
+                display: block;
+            }
+        }
+
+        .navigation {
+            display: none;
+
+            @include breakpoint($small) {
+                display: block;
+            }
+
+
+            li {
+                border-bottom: $green 0.1rem solid;
+
+                @include breakpoint($small) {
+                    display: inline-block;
+                    padding-left: 1rem;
+                    border-bottom: none;
+                }
+
+
+                a {
+                    font-size: 1.3rem;
+                    color: $white;
+                    padding: 1rem;
+                }
+            }
+        }
+    }
+}

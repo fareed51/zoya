@@ -1,0 +1,32 @@
+@import url(http://fonts.googleapis.com/css?family=Exo+2:200,400,600,800);
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css");
+
+//uses border box sizing like the old IE
+@include border-box-sizing;
+
+//Color Palate
+$white: #ffffff;
+$black: #000000;
+$blue: #007bff;
+$lightgray: #ebebeb;
+
+//Font variables
+$fontfamily: "Exo 2", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$light: 200;
+$normal: 400;
+$bold: 600;
+$heavy: 800;
+
+// body
+$bodyFont: $normal 2rem $fontfamily;
+$bodyFontHead: $bold 3.2rem $fontfamily;
+
+//Layout breakponts
+$narrow: 400px;
+$small: 650px;
+$medium: 960px;
+$wide: 1200px;
+
+//Layout variables
+$default-border-radius: 0.5rem;

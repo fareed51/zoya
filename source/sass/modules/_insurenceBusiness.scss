@@ -1,0 +1,52 @@
+#insurenceBusiness {
+    background-color: $black;
+
+    h2 {
+        color: $white;
+    }
+
+    .sectionContent {
+        display: inline-block;
+
+        @include clearfix;
+
+        .sectionLeft {
+            img {
+                width: 18rem;
+
+                @include breakpoint($small) {
+                    width: 45rem;
+                }
+            }
+        }
+
+        .sectionRight {
+            @include breakpoint($narrow) {
+                float: right;
+                margin-left: 3rem;
+
+                h4 {
+                    padding-bottom: 2rem;
+                }
+
+                li {
+                    padding-bottom: 1rem;
+                }
+            }
+
+
+            .topSection {
+                color: $white;
+
+                i {
+                    color: $green;
+                    font-size: .5rem;
+                }
+            }
+
+            .bottomSection {
+                color: $green;
+            }
+        }
+    }
+}

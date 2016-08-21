@@ -1,94 +1,68 @@
 #header {
-    @include backImage("../images/hero.png");
+    .helpingAuthorities {
+        ul {
+            text-align: center;
 
-    color: $white;
-    height: 100vh;
-    position: relative;
+            li {
+                display: none;
 
-    .contact-info {
-        background-color: rgba($black, 0.8);
-        border-bottom: rgba($white, 0.1) 0.2rem solid;
-        font-size: 1.2rem;
-        text-align: center;
+                @include breakpoint($small) {
+                    display: inline-block;
+                    padding: 2rem;
+                }
+
+
+                &:hover {
+                    color: $green;
+                }
+            }
+        }
+    }
+
+    .companyBrand {
+        margin: 2rem 0;
 
         @include clearfix;
 
-        .contacts {
-            float: left;
+        .companyLogo {}
 
+        .companyContact {
             ul {
+                @include breakpoint($small) {
+                    float: right;
+                    margin-top: -3rem;
+                }
+
+
                 li {
+                    color: $green;
                     display: inline-block;
 
-                    i {
-                        padding: .5rem;
-
-                        @include breakpoint($small) {
-                            padding: 1rem;
-                        }
+                    img {
+                        padding-right: 1.2rem;
                     }
                 }
             }
         }
-
-        .icons {
-            @include breakpoint($small) {
-                float: right;
-            }
-
-
-            i {
-                padding: .5rem;
-            }
-
-            .fa-search {
-                border-left: rgba($white, 0.1) 0.2rem solid;
-            }
-        }
     }
 
-    .tagline {
-        margin-top: 7rem;
+    .headerHero {
+        .heroImage {
+            @include backImage("../images/hero_image.png", to right, 0, 0, 10% top);
 
-        @include breakpoint($small) {
-            margin-top: 17rem;
-        }
+            height: 100vh;
+
+            .heroText {
+                padding-top: 5rem;
+
+                @include breakpoint($small) {
+                    padding-top: 15rem;
+                }
 
 
-        h1 {
-            font-size: 3rem;
-            color: $white;
-        }
-
-        p {
-            padding: 1rem 0 0 3rem;
-            color: $white;
-            font-size: 1.5rem;
-            font-weight: $bold;
-        }
-    }
-
-    .about-us {
-        background-color: rgba($blue, 0.8);
-        position: absolute;
-        bottom: 0;
-        font-size: 1.5rem;
-        width: 100%;
-
-        p {
-            padding: 1rem  0;
-            color: $white;
-
-            span {
-                display: none;
-            }
-
-            @include breakpoint($small) {
-                width: 50rem;
-                padding: 5rem  0;
-
-                span {
-                    display: block;
+                p {
+                    color: $white;
+                    text-align: center;
                 }
             }
         }

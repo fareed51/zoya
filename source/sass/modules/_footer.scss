@@ -1,28 +1,26 @@
 #footer {
-    border-top: $lightgray 2px solid;
+    background-color: #000000;
 
-    .bottomLine {
-        padding: 2rem;
-
+    .axeBrand {
         @include clearfix;
 
-        p {
-            font-size: 1rem;
-        }
-
-        img {
-            width: 1.5rem;
-            height: 1.5rem;
-        }
-
         .copyright {
-            @include breakpoint($small) {
+            font-size: 1rem;
+            color: $white;
+        }
+
+        .link {
+            cursor: pointer;
+            font-size: 1rem;
+            color: $green;
+        }
+
+        @include breakpoint($small) {
+            .copyright {
                 float: left;
             }
-        }
 
-        .symu {
-            @include breakpoint($small) {
+            .link {
                 float: right;
             }
         }

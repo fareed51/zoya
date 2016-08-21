@@ -12,40 +12,39 @@ body {
     font: $bodyFontHead;
 }
 
-h2 {
-    padding: 3rem;
-    font-size: 2rem;
+h1 {
+    font-size: 3rem;
     font-weight: $bold;
+    color: $green;
+    text-align: center;
+}
+
+h2 {
+    padding: 5rem 0;
+    font-size: 3rem;
+    font-weight: $normal;
+    color: $black;
     text-align: center;
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-weight: $bold;
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 
 p {
-    font-weight: $light;
+    text-align: center;
+    font-weight: $normal;
     color: $black;
-    font-size: 1.2rem;
-    line-height: 2rem;
-    margin: 0;
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
     padding: 0;
 }
-
-a {
-    text-decoration: none;
-    color: $white;
-}
-
-// .sectionBottom {
-//     background-color: red;
-//     margin-bottom: 5rem;
-// }
 
 .container {
     @include container(80%);

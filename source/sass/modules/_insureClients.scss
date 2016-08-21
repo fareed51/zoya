@@ -1,0 +1,12 @@
+#insurerClients {
+    p {
+        margin: 4rem .5rem;
+
+        @include breakpoint($small) {
+            font-size: 3.5rem;
+            line-height: 4.5rem;
+            margin: 7rem 15rem;
+            text-align: center;
+        }
+    }
+}

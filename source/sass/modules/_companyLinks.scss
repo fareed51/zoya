@@ -1,0 +1,37 @@
+#companyLinks {
+    background-color: $black;
+    color: $white;
+
+    @include clearfix;
+
+    .links {
+        float: left;
+        margin-bottom: 3rem;
+        width: calc(100% / 1);
+
+        @include breakpoint($small) {
+            width: calc(100% / 2);
+        }
+
+
+        @include breakpoint($medium) {
+            width: calc(100% / 4);
+        }
+
+
+        h4 {
+            padding-bottom: 1.5rem;
+            color: $white;
+        }
+
+        li {
+            font-weight: $narrow;
+            line-height: 2.5rem;
+            color: $green;
+
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+}

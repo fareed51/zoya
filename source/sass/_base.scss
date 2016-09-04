@@ -13,37 +13,36 @@ body {
 }
 
 h1 {
-    font-size: 3rem;
-    font-weight: $bold;
+    font-size: 3.5rem;
+    font-weight: $normal;
     color: $green;
     text-align: center;
 }
 
 h2 {
-    padding: 5rem 0;
-    font-size: 3rem;
-    font-weight: $normal;
+    padding-top: 10rem;
+    padding-bottom: 3rem;
+    font-size: 3.5rem;
+    font-weight: $light;
     color: $black;
     text-align: center;
 }
 
 h3 {
-    font-size: 2rem;
-    font-weight: $bold;
+    font-size: 1.8rem;
+    font-weight: $normal;
 }
 
 h4 {
-    font-size: 2rem;
+    font-weight: $normal;
+    font-size: 1.5rem;
 }
 
 p {
     text-align: center;
     font-weight: $normal;
-    color: $black;
-    font-size: 2rem;
+    font-size: 1.5rem;
     line-height: 3rem;
-    margin-bottom: 3rem;
-    padding: 0;
 }
 
 .container {

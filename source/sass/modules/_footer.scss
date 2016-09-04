@@ -24,5 +24,10 @@
                 float: right;
             }
         }
+
+
+        @include breakpoint($small) {
+            @include container(70%);
+        }
     }
 }

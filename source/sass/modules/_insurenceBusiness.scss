@@ -2,6 +2,7 @@
     background-color: $black;
 
     h2 {
+        font-size: 2.7rem;
         color: $white;
     }
 
@@ -23,7 +24,7 @@
         .sectionRight {
             @include breakpoint($narrow) {
                 float: right;
-                margin-left: 3rem;
+                margin-left: 6rem;
 
                 h4 {
                     padding-bottom: 2rem;
@@ -38,14 +39,22 @@
             .topSection {
                 color: $white;
 
-                i {
-                    color: $green;
-                    font-size: .5rem;
+                li {
+                    background: url(../images/bullet.png) 0 5px no-repeat;
+                    padding-left: 2rem;
+
+                    img {
+                        font-size: 2rem;
+                    }
                 }
             }
 
             .bottomSection {
                 color: $green;
+
+                h4 {
+                    padding-top: 2.5rem;
+                }
             }
         }
     }

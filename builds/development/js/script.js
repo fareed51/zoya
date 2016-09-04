@@ -9214,7 +9214,11 @@ $(document).ready(function() {
 	});
 });
 // <i class="fa fa-times" aria-hidden="true"></i>
-
+//pin navigation-----------------------
+  var pin = new ScrollScene({
+    triggerElement: "#nav",
+  }).setPin("#nav").addTo(controller);
+  //--------------------------------------
 
 // $(function(){
 // 	var fitnessheight = $('.fitness-article').outerHeight(true);

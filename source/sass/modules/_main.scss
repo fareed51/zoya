@@ -1,5 +1,5 @@
 li {
-    font-weight: $bold;
+    font-weight: $normal;
     font-size: 1.5rem;
     margin-top: .5rem;
     cursor: pointer;
@@ -8,13 +8,24 @@ li {
 .headerSection {
     text-align: center;
 
+    p {
+        font-size: 1.8rem;
+
+        @include breakpoint($small) {
+            margin: 2rem 14rem;
+        }
+    }
+
     .btn {
         display: inline-block;
         background-color: $green;
-        font-size: 1.5rem;
-        width: 20rem;
-        height: 3rem;
+        font-size: 1.3rem;
+        width: 22rem;
+        height: 4rem;
         cursor: pointer;
+        padding-top: .5rem;
+        margin-top: 3rem;
+        margin-bottom: 5rem;
 
         &:hover {
             background-color: $black;
@@ -24,5 +35,5 @@ li {
 }
 
 .sectionContent {
-    padding-bottom: 5rem;
+    padding-bottom: 8rem;
 }

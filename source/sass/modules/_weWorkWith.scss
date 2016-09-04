@@ -1,12 +1,14 @@
 #weWorkWith {
+    
+
     .partnersLogo {
         text-align: center;
 
         img {
             padding: 2rem;
 
-            @include breakpoint($medium) {
-                padding: 5rem;
+            @include breakpoint($small) {
+                padding: 2rem 5rem;
             }
         }
     }

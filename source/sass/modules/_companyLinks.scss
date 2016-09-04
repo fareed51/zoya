@@ -7,6 +7,7 @@
     .links {
         float: left;
         margin-bottom: 3rem;
+        margin-top: 3rem;
         width: calc(100% / 1);
 
         @include breakpoint($small) {
@@ -27,10 +28,19 @@
         li {
             font-weight: $narrow;
             line-height: 2.5rem;
+            font-size: 1.2rem;
             color: $green;
 
             &:hover {
                 color: $white;
+            }
+
+            span {
+                color: $white;
+
+                &:hover {
+                    cursor: auto;
+                }
             }
         }
     }

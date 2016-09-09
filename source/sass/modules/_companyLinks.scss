@@ -21,18 +21,25 @@
 
 
         h4 {
-            padding-bottom: 1.5rem;
+            padding: 1rem;
             color: $white;
         }
 
         li {
+            background: url(../images/linkSlashBg.png) left center no-repeat;
             font-weight: $narrow;
+            padding-left: 1rem;
+            text-align: left;
+            letter-spacing: .5px;
             line-height: 2.5rem;
             font-size: 1.2rem;
             color: $green;
+            text-decoration: underline;
 
             &:hover {
                 color: $white;
+                padding-left: 2rem;
+                transition: all .5s;
             }
 
             span {

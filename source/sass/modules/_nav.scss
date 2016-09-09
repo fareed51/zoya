@@ -1,11 +1,9 @@
 #nav {
     background-color: $black;
-    padding: 1.5rem 0;
-
-    @include clearfix;
-
     width: 100%;
-    z-index: 100;
+
+    // z-index: 100;
+    @include clearfix;
 
     menu {
         text-align: right;
@@ -27,18 +25,21 @@
 
             @include breakpoint($small) {
                 display: block;
+                height: 50px;
                 text-align: center;
             }
 
 
             li {
                 border-bottom: $green 0.1rem solid;
+                padding-top: .5rem;
 
                 @include breakpoint($small) {
                     display: inline-block;
                     font-weight: $bold;
                     margin: 0 auto;
                     font-size: 3rem;
+                    letter-spacing: .5px;
                     padding-right: 6rem;
                     border-bottom: none;
                 }

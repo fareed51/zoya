@@ -1,0 +1,19 @@
+.arrowUp {
+    display: none;
+
+    @include breakpoint($small) {
+        display: block;
+
+        .fa-arrow-circle-o-up {
+            color: rgba($green, 0.5);
+            font-size: 4rem;
+            position: fixed;
+            right: 0;
+            margin-right: 3rem;
+            bottom: 0;
+            padding-bottom: 5rem;
+            animation: 5s ease 0s normal none infinite down_btn;
+            -webkit-animation: 5s ease 0s normal none infinite down_btn;
+        }
+    }
+}

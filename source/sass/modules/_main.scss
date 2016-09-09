@@ -10,6 +10,7 @@ li {
 
     p {
         font-size: 1.8rem;
+        margin-bottom: 3rem;
 
         @include breakpoint($small) {
             margin: 2rem 14rem;
@@ -24,7 +25,6 @@ li {
         height: 4rem;
         cursor: pointer;
         padding-top: .5rem;
-        margin-top: 3rem;
         margin-bottom: 5rem;
 
         &:hover {
@@ -36,4 +36,18 @@ li {
 
 .sectionContent {
     padding-bottom: 8rem;
+
+    img {
+        padding-bottom: 1.5rem;
+    }
+
+    .chooseAxe {
+        h3 {
+            padding: .5rem 0;
+        }
+
+        p {
+            line-height: 2rem;
+        }
+    }
 }

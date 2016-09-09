@@ -18,12 +18,16 @@
 @import "mixins";
 @import "base";
 
+//Body partials
+@import "body/arrowUp";
+@import "body/textAnimation";
+
 //modules
 @import "modules/header";
 @import "modules/nav";
 @import "modules/main";
 @import "modules/insureClients";
-@import "modules/insurenceBusiness";
+@import "modules/insuranceBusiness";
 @import "modules/whatYouNeed";
 @import "modules/weWorkWith";
 @import "modules/chooseAxe";

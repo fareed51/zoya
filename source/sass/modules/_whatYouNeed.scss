@@ -10,12 +10,50 @@
             background-color: $black;
             color: $white;
             text-align: center;
-            padding-top: 3rem;
             height: 25rem;
 
             &:hover {
                 background-color: $green;
                 color: $black;
+            }
+
+            .strategy {
+                height: 15rem;
+                background: url(../images/icon_pawn.png) center center no-repeat;
+            }
+
+            .strategy: before {
+                background: url(../images/icon_pawn.png) center center no-repeat;
+            };
+
+            .strategy:hover, .strategy:active, .strategy:focus {
+                background: url(../images/icon_pawn_green.png) center center no-repeat;
+            }
+
+            .tactics {
+                height: 15rem;
+                background: url(../images/icon_whiteboard.png) center center no-repeat;
+            }
+
+            .tactics: before {
+                background: url(../images/icon_whiteboard.png) center center no-repeat;
+            };
+
+            .tactics:hover, .tactics:active, .tactics:focus {
+                background: url(../images/icon_whiteboard_green.png) center center no-repeat;
+            }
+
+            .extinguisher {
+                height: 15rem;
+                background: url(../images/icon_extinguisher.png) center center no-repeat;
+            }
+
+            .extinguisher: before {
+                background: url(../images/icon_extinguisher.png) center center no-repeat;
+            };
+
+            .extinguisher:hover, .extinguisher:active, .extinguisher:focus {
+                background: url(../images/icon_extinguisher_green.png) center center no-repeat;
             }
 
             $item-width: 100%;
@@ -25,15 +63,6 @@
 
             @include breakpoint($small) {
                 width: calc(#{$item-width}/3);
-            }
-
-
-            h3 {
-                padding-top: 2rem;
-            }
-
-            p {
-                font-size: 1.4rem;
             }
         }
     }

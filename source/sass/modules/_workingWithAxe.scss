@@ -31,13 +31,6 @@
             @include breakpoint($small) {
                 width: calc(#{$item-width}/6);
             }
-
-
-            p {
-                padding-top: 1.5rem;
-                padding-bottom: 1rem;
-                line-height: 2rem;
-            }
         }
     }
 }
